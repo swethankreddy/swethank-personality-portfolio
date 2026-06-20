@@ -1,0 +1,140 @@
+[
+  {
+    "id": "1",
+    "workspaceId": "multi-agent",
+    "workspaceLabel": "PROJECT",
+    "workspaceTitle": "Multi-Agent AI Systems",
+    "title": "Building Scalable Multi-Agent AI Systems",
+    "description": "Engineered MLP, CNN, LSTM, and Transformer architectures in PyTorch achieving 94.3% accuracy on MNIST and 89.1% on IMDB. Built production-grade RAG and ReAct agents using LangGraph and LangChain with locally hosted LLMs. Achieved 3.2× inference speed-up via GGUF quantization and ONNX optimization.",
+    "year": 2025,
+    "tags": ["AI", "LangGraph", "PyTorch", "RAG", "ONNX"],
+    "link": "",
+    "status": "completed",
+    "published": true,
+    "detail": {
+      "overview": "Deep learning architectures built from scratch in PyTorch:\n- MLP, CNN, LSTM, Transformer: 94.3% accuracy on MNIST, 89.1% on IMDB sentiment\n- Trained end-to-end; learned low-level PyTorch internals (custom training loops, loss functions, optimizers)\n\nProduction AI agents:\n- RAG (Retrieval-Augmented Generation) pipeline: document ingestion → vector store → retrieval → generation\n- ReAct (Reasoning + Acting) agents: LangGraph orchestration, LangChain tool integration, locally-hosted open-source LLMs\n- Both deployed as working systems, not just notebooks",
+      "implementation": "Inference optimization:\n- 3.2× speed-up via GGUF quantization (reduced model size for CPU/edge inference)\n- ONNX export for cross-platform, cross-framework deployment",
+      "results": "94.3% accuracy on MNIST, 89.1% on IMDB sentiment. 3.2× inference speed-up via GGUF quantization and ONNX optimization.",
+      "techStack": "PyTorch, LangGraph, LangChain, ONNX, GGUF, Python"
+    }
+  },
+  {
+    "id": "2",
+    "workspaceId": "cancer-omics",
+    "workspaceLabel": "RESEARCH",
+    "workspaceTitle": "Cancer Omics Research",
+    "title": "Cancer Omics Research",
+    "description": "Computational biology research at IIT Bombay applying machine learning to genomic data to identify patterns in cancer omics datasets. Using ML to make sense of high-dimensional biological signals.",
+    "year": 2025,
+    "tags": ["ML", "Bioinformatics", "Cancer Genomics"],
+    "link": "",
+    "status": "active",
+    "published": true,
+    "detail": {
+      "overview": "Computational biology research at IIT Bombay applying machine learning to cancer genomics.\n- Analyzing multi-omics datasets: gene expression profiles, genomic variation, and proteomics\n- Goal: identify patterns, co-expression clusters, and potential biomarkers distinguishing cancer subtypes or disease states\n- Research context: IIT Bombay lab, working with real biological data where labels are sparse or noisy",
+      "implementation": "Core ML challenge: p >> n (features far exceed samples), requiring regularization, feature selection, and dimensionality reduction. Pipeline: preprocessing → feature engineering → model training on high-dimensional genomic representations.",
+      "challenges": "Unlike standard ML benchmarks, biological data has high noise, batch effects, and domain-specific preprocessing requirements: normalization methods, log-transformation, filtering low-expressed genes. Every data quality decision has biological consequences.",
+      "results": "Ongoing active research. Working toward identifying ML-derived biomarkers that distinguish cancer subtypes from multi-omics profiles.",
+      "techStack": "Python, Scanpy, scikit-learn, pandas, bioinformatics preprocessing tools"
+    }
+  },
+  {
+    "id": "3",
+    "workspaceId": "market-regime",
+    "workspaceLabel": "PROJECT",
+    "workspaceTitle": "Market Regime Detection",
+    "title": "Market Regime Detection via Unsupervised Learning",
+    "description": "Applied K-Means clustering and PCA dimensionality reduction to order book data, identifying 11 distinct market regimes. Achieved Silhouette Score of 0.450 and Davies-Bouldin Index of 1.227.",
+    "year": 2025,
+    "tags": ["ML", "Finance", "K-Means", "PCA"],
+    "link": "",
+    "status": "completed",
+    "published": true,
+    "detail": {
+      "overview": "Quantitative finance project using unsupervised ML to identify distinct market microstructure states from order book data.\n- Input: bid/ask prices, depth, spread, and volume at price levels\n- Pipeline: feature engineering → PCA dimensionality reduction → K-Means clustering",
+      "implementation": "Feature engineering on raw order book data to extract liquidity, volatility, and momentum signals. PCA applied to reduce dimensionality before clustering. K-Means used to find natural groupings in the feature space without labeled supervision.",
+      "challenges": "Financial data is non-stationary and regime labels are inherently unobserved. Selecting the right number of clusters required iterating over multiple metrics and validating that discovered regimes had economic interpretability.",
+      "results": "11 distinct market regimes identified, representing states such as trending, range-bound, high-volatility, and illiquid conditions. Silhouette Score: 0.450 (reasonable separation). Davies-Bouldin Index: 1.227 (competitive for financial data).",
+      "techStack": "Python, scikit-learn, K-Means, PCA, pandas, time-series feature engineering"
+    }
+  },
+  {
+    "id": "4",
+    "workspaceId": "object-detection",
+    "workspaceLabel": "PROJECT",
+    "workspaceTitle": "Object Detection & Facial Recognition",
+    "title": "Real-Time Object Detection & Facial Recognition",
+    "description": "Deployed YOLOv8 for real-time multi-class object detection on live video streams. Implemented Siamese Neural Networks for one-shot facial recognition with high inter-class discriminability.",
+    "year": 2024,
+    "tags": ["Computer Vision", "YOLOv8", "PyTorch", "OpenCV"],
+    "link": "",
+    "status": "completed",
+    "published": true,
+    "detail": {
+      "overview": "Two computer vision systems combined into one project: real-time multi-class object detection and one-shot facial recognition.",
+      "implementation": "Object detection: deployed YOLOv8 (single-stage detector) for real-time multi-class detection on live video streams. Optimized for throughput.\n\nFacial recognition: implemented Siamese Neural Networks for metric learning. One-shot approach means a face can be recognized from a single reference image without retraining. Learns a similarity/distance metric rather than fixed class labels, making it practical for open-set recognition where new identities can be added at any time.",
+      "results": "Real-time multi-class object detection on live video. High inter-class discriminability in facial recognition with one-shot generalization to unseen identities.",
+      "techStack": "PyTorch, YOLOv8, Siamese Neural Networks, OpenCV, Python"
+    }
+  },
+  {
+    "id": "5",
+    "workspaceId": "gesture-recognition",
+    "workspaceLabel": "PROJECT",
+    "workspaceTitle": "Gesture-Based Text Creation",
+    "title": "Gesture-Based Text Creation & Recognition",
+    "description": "Built CNN in TensorFlow for handwritten MNIST digit recognition with 89%+ accuracy. Integrated MediaPipe hand-landmark detection with OpenCV for a real-time gesture-controlled drawing canvas.",
+    "year": 2024,
+    "tags": ["Computer Vision", "TensorFlow", "MediaPipe", "OpenCV"],
+    "link": "",
+    "status": "completed",
+    "published": true,
+    "detail": {
+      "overview": "Real-time system combining gesture tracking with handwriting recognition. Users draw digits in the air; the system recognizes them live from the camera feed.",
+      "implementation": "CNN digit classifier: built in TensorFlow on MNIST, standard Conv → Pool → Dense architecture with dropout.\n\nGesture canvas: MediaPipe tracks 21 hand keypoints per frame from the camera. Index finger tip position draws strokes on a virtual canvas rendered by OpenCV.\n\nCombined pipeline: camera → MediaPipe (finger tracking) → OpenCV (canvas rendering) → CNN (digit classification).",
+      "results": "89%+ accuracy on handwritten digit recognition. Real-time pipeline with no perceptible lag between gesture and canvas rendering.",
+      "techStack": "TensorFlow, MediaPipe, OpenCV, CNN, Python"
+    }
+  },
+  {
+    "id": "6",
+    "workspaceId": "bulldozer-price",
+    "workspaceLabel": "PROJECT",
+    "workspaceTitle": "Bulldozer Price Prediction",
+    "title": "Bulldozer Price Prediction: Time Series ML",
+    "description": "Trained Random Forest Regressor on 400K+ record Kaggle dataset, achieving R² = 0.88. Reduced overfitting via RandomizedSearchCV hyperparameter tuning.",
+    "year": 2024,
+    "tags": ["ML", "Time Series", "Random Forest", "Kaggle"],
+    "link": "",
+    "status": "completed",
+    "published": true,
+    "detail": {
+      "overview": "Regression project on heavy equipment auction data (Kaggle Blue Book for Bulldozers). Predicting sale prices from 400,000+ historical auction records covering equipment specs, age, usage hours, sale date, and region.",
+      "implementation": "Random Forest Regressor, robust to feature heterogeneity and nonlinear interactions.\n\nKey decisions:\n- Time-series split: validation on data strictly after training cutoff to prevent data leakage\n- Feature engineering: year/month extracted from sale dates, categorical specs encoded\n- Overfitting reduction: RandomizedSearchCV over n_estimators, max_depth, min_samples_split",
+      "challenges": "Preventing data leakage in a time-series context: standard cross-validation would allow training on future data. Used a strict temporal split instead. Feature engineering required domain understanding of equipment auction specs.",
+      "results": "R² = 0.88, explaining 88% of auction price variance. Strong result given the noise inherent in real-world auction data.",
+      "techStack": "Python, scikit-learn, Random Forest, pandas, Kaggle"
+    }
+  },
+  {
+    "id": "7",
+    "workspaceId": "swethankos",
+    "workspaceLabel": "PROJECT",
+    "workspaceTitle": "SwethankOS: 3D Retro Portfolio",
+    "title": "SwethankOS: 3D Retro Terminal Portfolio",
+    "description": "An earlier portfolio reimagined as a fictional OS. Click a 3D laptop to boot into a CRT terminal desktop with draggable windows, a typed command-line interface, embedded mini-games, and full post-processing visual effects.",
+    "year": 2024,
+    "tags": ["Three.js", "React Three Fiber", "Blender", "3D", "Vite", "Creative Dev"],
+    "link": "https://github.com/swethankreddy/3d-portfolio-web",
+    "github": "https://github.com/swethankreddy/3d-portfolio-web",
+    "status": "completed",
+    "published": true,
+    "detail": {
+      "overview": "An earlier personal portfolio reimagined as a fully interactive 3D retro operating system. Visitors click a Blender-modeled, Three.js-rendered laptop to trigger a CRT boot sequence, which transitions into a draggable-window desktop environment.\n\nThe centerpiece is a typed terminal with a custom command registry (about, skills, projects, contact, and more), command history, and tab-style autocomplete. The desktop includes a z-index window manager, CRT-flicker dock, ambient sound, and two embedded mini-games: Snake and a finance-themed NeuroTrade game built with Chart.js.",
+      "implementation": "Notable engineering decisions:\n- Z-index stacking system: a custom manager assigns z-index values so multiple draggable windows can be brought to front independently, like a real OS\n- Command history as a linked list: HistoryNode class with prev/next pointers for up/down arrow traversal — a deliberate data structure choice over a plain array\n- Boot progress tied to real asset loading: the CRT boot bar is wired to drei's useProgress, tracking actual .glb model load progress rather than a fake timer\n- Adaptive rendering: device pixel ratio, shadows, and post-processing conditionally disabled on mobile to avoid overloading weaker GPUs",
+      "challenges": "Building an OS-like window manager in the browser: z-index stacking, drag behavior, and focus management across multiple simultaneous windows. Keeping 3D rendering performant while running post-processing effects. The experience is intentionally desktop-only, with a styled fallback for mobile.",
+      "results": "Fully interactive 3D portfolio with a working terminal CLI, two embedded mini-games, and full CRT post-processing (scanlines, noise, vignette, glitch/anaglyph mode).",
+      "techStack": "Three.js, React Three Fiber, @react-three/drei, @react-three/postprocessing, Blender, Framer Motion, Chart.js, Vite, React 19"
+    }
+  }
+]

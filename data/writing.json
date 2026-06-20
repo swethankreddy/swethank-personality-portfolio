@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dc189a99-e961-45d0-aa9a-5350dda1b190",
+    "slug": "why-i-built-an-ai-chatbot-instead-of-a-portfolio-page",
+    "title": "Why I Built an AI Chatbot Instead of a Portfolio Page",
+    "date": "2026-06-18T07:34:35.279Z",
+    "excerpt": "Everyone's portfolio looks the same. So I built mine a brain.",
+    "content": "Most portfolios are the same scroll. Hero section, projects grid, contact form. I've seen a hundred of them, and they all start to look like the same template wearing different colors.\r\n\r\nI wanted mine to actually feel different, so instead of a static page, I built a chatbot that sits on the homepage and answers questions about me: my research, my projects, my experience. It's the first thing people see, and it's not a wall of text. It's a conversation.\r\n\r\nIt also gave me an excuse to finally use something I learned over a year ago and never shipped: a multi-agent RAG and ReAct setup. The bot doesn't just dump my whole bio into every response. When you ask about a specific project, it fetches the full detail on demand, then highlights the matching project card on screen so you can see exactly what it's talking about as it talks. Building that reference card sync, watching the right card light up the moment the bot mentions it, was the most satisfying part of this whole build.\r\n\r\nThe other interesting part: people push back. I've had visitors tell the bot my projects look boring, or that they wouldn't hire me based on them. I had to actually think about how the bot should handle that instead of getting defensive or repeating the same pitch louder. It's a small thing, but it taught me more about tone and restraint than any of the technical work did.\r\n\r\nThere's also a selfishly practical reason I built this. I'm genuinely bad at replying to messages. Texts pile up, I lose interest, I go quiet. This bot is, in a small way, me outsourcing the part of myself that doesn't follow through. If you message my portfolio at 2am asking about my work, it'll actually answer. I probably won't.",
+    "tags": [
+      "AI",
+      "Chatbot",
+      "Portfolio"
+    ],
+    "published": true
+  }
+]
