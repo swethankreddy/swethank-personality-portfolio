@@ -19,6 +19,7 @@ const CONTENT_NAV: NavItem[] = [
 const SYSTEM_NAV: NavItem[] = [
   { href: '/admin/settings',   label: 'Settings' },
   { href: '/admin/ai',         label: 'AI Workspace' },
+  { href: '/admin/observability', label: 'Observability' },
 ];
 
 function NavLink({ href, label }: NavItem) {

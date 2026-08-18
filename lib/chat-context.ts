@@ -1,8 +1,10 @@
 import { getPublishedWriting, getCurrentStatus } from './data';
+import { getCatalogueSummary } from './knowledge-index';
 
 export function getChatContext(): string {
   const writing = getPublishedWriting();
   const status = getCurrentStatus();
+  const catalogue = getCatalogueSummary();
 
   const writingIndex =
     writing.length > 0
@@ -18,16 +20,10 @@ Contact: swethankreddy@iitb.ac.in · GitHub: github.com/swethankreddy · LinkedI
 Currently:
 ${status.map((s) => `- ${s}`).join('\n')}
 
-## Item index (call getItemDetails before describing any item in depth)
-id | category | title | tags
-multi-agent | project | Multi-Agent AI Systems | PyTorch, LangGraph, RAG, ONNX, GGUF
-cancer-omics | research | Cancer Omics Research | genomics, ML, bioinformatics, IIT Bombay
-market-regime | project | Market Regime Detection | K-Means, PCA, order book, quant finance
-aum-ventures | experience | Investment Analyst at AUM Ventures | VC, AI/deep-tech, due diligence
-object-detection | project | Real-Time Object Detection & Facial Recognition | YOLOv8, Siamese Networks, OpenCV
-gesture-recognition | project | Gesture-Based Text Creation & Recognition | MediaPipe, TensorFlow, OpenCV
-bulldozer-price | project | Bulldozer Price Prediction | Random Forest, Kaggle, regression
-swethankos | project | SwethankOS: 3D Retro Terminal Portfolio | Three.js, React Three Fiber, Blender, 3D, Vite, creative-dev
+## Corpus
+${catalogue}
+
+Item ids are NOT listed here. Use searchPortfolio to find them.
 
 ## Writing
 ${writingIndex}
